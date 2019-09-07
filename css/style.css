@@ -1,0 +1,2511 @@
+@font-face {
+  font-family: 'GothProLig';
+  src: url('../fonts/GothaProLig.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'GothProBla';
+  src: url('../fonts/GothaProBla.otf') format('opentype');
+}
+
+.flexyAndCenter {
+    display: flex;
+    align-items: center;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.floatR {
+    float: right;
+}
+
+.padt_3 {
+    padding-top: 3px;
+}
+
+.padt_10 {
+    padding-top: 10px;
+}
+
+.padb_15 {
+    padding-bottom: 15px;
+}
+
+.mrl_0 {
+    margin-left: 0 !important;
+}
+
+.mrr_0 {
+    margin-right: 0 !important;
+}
+
+.content_1140 {
+    max-width: 1140px;
+    min-width: 200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.content_260 {
+    width: 260px;
+    margin: 0 auto;
+}
+
+.filler {
+    height: 185px;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+    position: relative;
+}
+
+button {
+    outline: none;
+}
+
+button:active {
+    outline: none;
+}
+
+button:focus {
+    outline: none;
+}
+
+input::-webkit-input-placeholder {
+    color: #000;
+}
+
+input::-moz-placeholder {
+    color: #000;
+}
+
+textarea::-webkit-input-placeholder {
+    color: #000;
+}
+
+textarea::-moz-placeholder {
+    color: #000;
+}
+
+header {
+    width: 100%;
+    z-index: 9997;
+    position: fixed;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+.posRel {
+    position: relative;
+}
+
+.whiteBG {
+    background: #fff;
+}
+
+.grayBG {
+    background: #F4F4F4;
+}
+
+.workHours {
+    font-family: 'GothProLig';
+    font-size: 12px;
+    line-height: 11px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.socMediaLink rect {
+    transition: all 300ms ease-in-out;
+}
+
+.socMediaLink:hover rect {
+    fill: #EA6428;
+    transition: all 300ms ease-in-out;
+}
+
+.logoSubs {
+    margin-left: 10px;
+}
+
+.logoSubs h2 {
+    font-family: 'GothProLig';
+    font-size: 25px;
+    line-height: 24px;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.logoSubs span {
+    font-family: 'GothProBla';
+    color: #16579C;
+}
+
+.logoSubs p {
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.location p {
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 0;
+    margin-left: 8px;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.phone p {
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.phone span {
+    font-family: 'GothProBla';
+    font-size: 25px;
+    line-height: 150%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #16579C;
+    margin-bottom: 0;
+}
+
+.menuCol {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menuCol a {
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    font-weight: 600;
+}
+
+.menuCol a:hover {
+    font-family: 'GothProBla';
+}
+
+.menuCol a:focus {
+    font-family: 'GothProBla';
+}
+
+.orangeButton {
+    width: 350px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EA6428;
+    transition: all 300ms ease-in-out;
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: -0.015em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 0;
+    transition: all 300ms ease-in-out;
+    border: none;
+}
+
+.orangeButton:hover {
+    background: #16579C;
+    transition: all 300ms ease-in-out;
+}
+
+.burgerButtonWrap {
+    display: none;
+    padding: 10px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 9999;
+    position: absolute;
+    right: 10px;
+}
+
+.burgerButton {
+    width: 100%;
+    position: relative;
+    height: 22px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease-in-out;
+}
+
+.burgerBase {
+    width: 22px;
+    height: 2px;
+    background: #EA6428;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 300ms ease-in-out;
+}
+
+.burgerBase:before {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #EA6428;
+    position: absolute;
+    top: 0;
+    transition: all 300ms ease-in-out;
+}
+
+.burgerBase:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #EA6428;
+    position: absolute;
+    bottom: 0;
+    transition: all 300ms ease-in-out;
+}
+
+.activeBurger {
+    background: rgba(234, 100, 40, 0);
+    transition: all 300ms ease-in-out;
+}
+
+.activeBurger:before {
+    transform: rotate(45deg);
+    opacity: 1;
+    top: 10px;
+    transition: all 300ms ease-in-out;
+    background: #16579C;
+}
+
+.activeBurger:after {
+    transform: rotate(-45deg);
+    opacity: 1;
+    bottom: 10px;
+    transition: all 300ms ease-in-out;
+    background: #16579C;
+}
+
+.burgerModal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255, 255, 255, 1);
+    transform: translateX(100vw);
+    transition: all 300ms ease-in-out;
+    display: flex;
+    align-items: center;
+    z-index: 9996;
+}
+
+.burgerModalActive {
+    transform: translateX(0vw);
+    transition: all 300ms ease-in-out;
+}
+
+.burgerModal ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.burgerModal ul li a {
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.04em;
+    color: #000000;
+    transition: all 300ms ease-in-out;
+}
+
+.burgerModal ul li a:hover {
+    color: #EA6428;
+    font-size: 18px;
+    transition: all 300ms ease-in-out;
+}
+
+.burgerModal .orangeButton {
+    width: 100%;
+    height: 40px;
+}
+
+.burgerModal .orangeButton p {
+    font-size: 12px;
+}
+
+.burgerModal .location {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.burgerModal .location p {
+    font-size: 12px;
+}
+
+.burgerModal .phone {
+    margin-top: 15px;
+}
+
+.burgerModal .phone p {
+    font-size: 12px;
+}
+
+.burgerModal .phone span {
+    font-size: 15px;
+}
+
+.socialMediaIcons {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.socialMediaIcons a {
+    margin: 0 3px;
+}
+
+@media (min-width: 200px) and (max-width: 1100px) {
+    .phoneAndLocationCol {
+        display: none;
+    }
+
+    .menuRow {
+        display: none;
+    }
+
+    .socMediaCol {
+        display: none;
+    }
+
+    .burgerButtonWrap {
+        display: block;
+    }
+
+    .filler {
+        height: 105px;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 500px) {
+    .logoSubs h2 {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 399px) {
+    .logoSubs h2 {
+        font-size: 11px;
+    }
+
+    .logoSubs p {
+        font-size: 10px;
+    }
+}
+
+/*header styles end************************************************************************************************************/
+
+.bannerBlock {
+    padding: 150px 0;
+    background: url(../img/banner.png) no-repeat;
+    background-size: cover;
+}
+
+.stats {
+    padding: 70px 30px 40px 70px;
+    background: #fff;
+    max-width: 753px;
+}
+
+.stats p {
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 15px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.stats span {
+    font-family: 'GothProBla';
+}
+
+.statBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.statBox p {
+    font-family: 'GothProLig';
+    font-size: 25px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 0;
+    margin-left: 30px;
+    max-width: 341px;
+}
+
+.numbers {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.numbers p {
+    font-family: 'GothProBla';
+    font-size: 65px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 0;
+    margin-left: 5px;
+}
+
+.stats h2 {
+    font-family: 'GothProBla';
+    font-size: 25px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+.buttonBlock {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.slidingField {
+    display: flex;
+    height: 60px;
+    background: #16579C;
+    border-radius: 30px;
+    padding-right: 20px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.slidingField p {
+    font-family: 'GothProBla';
+    font-size: 16px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #FFFFFF;
+    font-weight: 100;
+    margin-left: 70px;
+    z-index: 98;
+}
+
+.slidingField .plusButton {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+    background: #05A1E6;
+    padding: 0;
+
+    font-family: 'GothProBla';
+    font-size: 30px;
+    line-height: 29px;
+    text-align: center;
+    color: #fff;
+
+    position: absolute;
+    transform: translateX(0%);
+    transition: all 500ms ease-in-out;
+    z-index: 100;
+    transition-delay: 500ms;
+}
+
+.cover {
+    width: 100%;
+    position: absolute;
+    background: #16579C;
+    z-index: 99;
+    height: 100%;
+    border-radius: 30px;
+    transform: translateX(-83%);
+    transition: all 500ms ease-in-out;
+    transition-delay: 500ms;
+}
+
+.activePlusButton {
+    transform: translateX(495%) !important;
+    transition: all 500ms ease-in-out;
+    background: #EA6428 !important;
+    transition-delay: 0ms !important;
+}
+
+.activeCover {
+    transform: translateX(0%) !important;
+    transition: all 500ms ease-in-out;
+}
+
+.video {
+    width: 60px;
+    height: 60px;
+    background: #EA6428;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 65px;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.arrowRight {
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #fff;
+    position: absolute;
+    left: 25px;
+    transition: all 300ms ease-in-out;
+}
+
+.video:hover {
+    background: #16579C;
+    transition: all 300ms ease-in-out;
+}
+
+.video:hover .arrowRight {
+    border-left: 15px solid #EA6428;
+    transition: all 300ms ease-in-out;
+}
+
+.formModal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    transform: translateX(-100vw);
+    transition: all 500ms ease-in-out;
+}
+
+.activeFormModal {
+    transform: translateX(0vw);
+    transition: all 500ms ease-in-out;
+    transition-delay: 500ms;
+}
+
+.consultFormWrap {
+    position: relative;
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.consultForm {
+    max-width: 560px;
+    padding: 45px 90px;
+}
+
+.consultForm h2 {
+    font-family: 'GothProBla';
+    font-size: 25px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    margin-bottom: 5px;
+    color: #000;
+}
+
+.consultForm p {
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.consultForm .input {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 2px solid #BEBEBE;
+    height: 60px;
+    padding-left: 40px;
+}
+
+.consultForm textarea {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+    border: 2px solid #BEBEBE;
+    padding-left: 40px;
+}
+
+.submit {
+    border: none !important;
+    background: #EA6428;
+    color: #fff;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+
+    font-family: 'GothProBla';
+    font-size: 16px;
+    line-height: 146.16%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 300ms ease-in-out;
+}
+
+.submit:hover {
+    background: #16579C;
+    transition: all 300ms ease-in-out;
+}
+
+.insteadOfTick {
+    font-family: 'GothProLig'!important;
+    font-size: 12px !important;
+    line-height: 120% !important;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em !important;
+    color: #000000;
+    margin-bottom: 0 !important;
+}
+
+.formClose {
+    width: 15px;
+    padding: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: none;
+    background: transparent;
+}
+
+.formClose:hover .formClosePt_1 {
+    background: #EA6428;
+    transition: all 300ms ease-in-out;
+}
+
+.formClose:hover .formClosePt_2 {
+    background: #EA6428;
+    transition: all 300ms ease-in-out;
+}
+
+.formClosePt_1 {
+    width: 21px;
+    height: 2px;
+    transform: rotate(45deg) translateY(1px);
+    background: #8A8A8A;
+    transition: all 300ms ease-in-out;
+}
+
+.formClosePt_2 {
+    width: 21px;
+    height: 2px;
+    transform: rotate(-45deg) translateY(-1px);
+    background: #8A8A8A;
+    transition: all 300ms ease-in-out;
+}
+
+.formModal label {
+    font-family: 'GothProLig';
+    font-size: 10px;
+    color: #EA6428;
+    transform: translateY(5px);
+    margin-left: 42px;
+    display: none;
+    position: absolute;
+}
+
+.error input {
+    border: 2px solid #EA6428 !important;
+}
+
+.error label {
+    display: block !important;
+}
+
+@media (min-width: 200px) and (max-width: 576px) {
+    .consultForm textarea {
+        height: 110px;
+    }
+
+    .consultForm {
+        padding: 20px 90px;
+    }
+
+    .consultForm p {
+        margin-bottom: 15px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 480px) {
+    .consultForm {
+        padding: 20px 10px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+    .stats {
+        padding: 30px 10px 30px 10px;
+    }
+
+    .statBox {
+        flex-wrap: wrap;
+    }
+
+    .statBox p {
+        margin-left: 0;
+    }
+
+    .stats h2 {
+        margin-top: 15px;
+    }
+
+    .buttonBlock {
+        flex-wrap: wrap;
+    }
+
+    .slidingField {
+        width: 230px;
+    }
+
+    .activePlusButton {
+        transform: translateX(285%) !important;
+    }
+
+    .video {
+        margin-left: 10px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 350px) {
+    .slidingField {
+        width: 188px;
+    }
+
+    .activePlusButton {
+        transform: translateX(215%) !important;
+    }
+
+    .video {
+        margin-left: 5px;
+    }
+}
+
+/*banner block end******************************************************************************************/
+
+.advantageCol {
+    padding: 80px 15px 0  15px;
+}
+
+.advatagesRow h1 {
+    font-family: 'GothProLig';
+    font-size: 45px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.advatagesRow h1 span {
+    font-family: 'GothProBla';
+}
+
+.advatageCardsBlock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.advatageCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 48%;
+    margin-bottom: 60px;
+}
+
+.advatageCardText {
+    margin-left: 20px;
+}
+
+.advatageCardText h5 {
+    font-family: 'GothProBla';
+    font-size: 16px;
+    line-height: 120%;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.advatageCardText p {
+    font-family: 'GothProLig';
+    font-size: 12px;
+    line-height: 120%;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.advantageCol_2 {
+    background: url(../img/advantageBackground.png) no-repeat;
+    background-position: 0 20px;
+}
+
+@media (min-width: 200px) and (max-width: 991px) {
+    .doctorsImg {
+        display: none;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 550px) {
+
+    .advatageCardsBlock {
+        flex-wrap: wrap;
+    }
+
+    .advatageCard {
+        max-width: 100%;
+    }
+
+    .advatagesRow h1 {
+        font-size: 28px;
+    }
+}
+
+/*advatages block end***********************************************************************************************************/
+
+.aboutUsCol {
+    padding: 80px 15px 80px 15px;
+}
+
+.aboutUsCol_1 {
+    background: url(../img/advantageBackground.png) no-repeat;
+    background-position: 0 20px;
+    position: relative;
+}
+
+.aboutUsCol_1 h1 {
+    font-family: 'GothProLig';
+    font-size: 45px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.aboutUsCol_1 h1 span {
+    font-family: 'GothProBla';
+    font-size: 45px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.aboutUsCol_1 .subText {
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 120%;
+    color: #8A8A8A;
+}
+
+.aboutUsCol_1 p {
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 120%;
+    color: #000000;
+}
+
+.specialText {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.specialText h5 {
+    font-family: 'GothProLig';
+    font-size: 25px;
+    line-height: 120%;
+    color: #000000;
+    max-width: 555px;
+}
+
+.specialText img {
+    width: 68px;
+    height: 60px;
+    margin-right: 15px;
+}
+
+.blueLine {
+    width: 4px;
+    height: 185px;
+    background: #16579C;
+    margin-right: 14px;
+}
+
+.quote {
+    font-family: 'GothProLig';
+    font-size: 12px !important;
+    line-height: 120%;
+    color: #8A8A8A !important;
+    text-align: center;
+}
+
+.quote span {
+    font-family: 'GothProBla';
+    font-size: 12px;
+    line-height: 120%;
+    color: #000000;
+}
+
+.sign {
+    position: absolute;
+    bottom: 20px;
+    right: 0;
+}
+
+.aboutUsCol_2 iframe {
+    width: 100%;
+    height: 314px;
+    margin-bottom: 20px;
+}
+
+.aboutUsCol_2 h2 {
+    font-family: 'GothProBla';
+    font-size: 25px;
+    line-height: 120%;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.aboutUsCol_2 p {
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 120%;
+    color: #2F2F2F;
+    font-weight: 600;
+}
+
+/*about us block end*********************************************************************************************************************/
+
+.freeConsultBlock {
+    background: url(../img/consultFormBackground.png) no-repeat;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+.freeConsultBlock h1 {
+    font-family: 'GothProLig';
+    font-size: 45px;
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.freeConsultBlock h1 span {
+    font-family:'GothProBla';
+    font-size: 45px;
+    line-height: 43px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.freeConsultBlock p {
+    font-family: 'GothProLig';
+    font-size: 25px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    margin-bottom: 50px;
+}
+
+.freeConsultBlock form {
+    position: relative;
+}
+
+.freeConsultBlock input {
+    width: 36%;
+    height: 60px;
+    margin-bottom: 30px;
+    padding-left: 40px;
+}
+
+.freeConsultBlock textarea {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    top: 0;
+    width: 56%;
+    padding-left: 40px;
+}
+
+.freeConsultBlock label {
+    display: none;
+    font-family: 'GothProLig';
+    font-size: 10px;
+    color: #EA6428;
+    transform: translateY(5px);
+    margin-left: 42px;
+    position: absolute;
+}
+
+@media (min-width: 200px) and (max-width: 767px) {
+    .freeConsultBlock textarea {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 30px;
+        position: static;
+    }
+
+    .freeConsultBlock input {
+        width: 100%;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 500px) {
+    .freeConsultBlock h1 {
+        font-size: 28px;
+    }
+
+    .freeConsultBlock h1 span {
+        font-size: 28px;
+    }
+
+    .freeConsultBlock p {
+        font-size: 20px;
+    }
+
+    .freeConsultBlock .submit {
+        padding: 0;
+    }
+}
+
+/*ConsultBlock styles end******************************************************************************************************************************/
+
+.directionBlock {
+    background: linear-gradient(0deg, #F5F5F5, #F5F5F5), #FFFFFF;
+}
+
+.directionBlock .content_1140 {
+    background: url(../img/advantageBackground.png) no-repeat;
+    background-position: 52% 70px;
+    padding: 130px 15px 70px 15px;
+}
+
+.directionBlock h1 {
+    font-family: 'GothProLig';
+    font-size: 45px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.directionBlock h1 span {
+    font-family: 'GothProBla';
+    font-size: 45px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.directionBlock p {
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+.directionCard {
+    padding: 16px 11px 10px 11px;
+    background: #fff;
+    min-height: 320px;
+    margin-top: 30px;
+}
+
+.directionCard .imgWrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    height: 102px;
+}
+
+.directionCard h5 {
+    font-family: 'GothProBla';
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+@media (min-width: 200px) and (max-width: 500px) {
+    .directionBlock h1 {
+        font-size: 30px;
+    }
+
+    .directionBlock h1 span {
+        font-size: 30px;
+    }
+}
+
+/*directionBlock styles end****************************************************************************************************/
+
+.adviseBlock {
+    position: relative;
+    height: 680px;
+}
+
+.adviseBlock .content_1140 {
+    height: 100%;
+}
+
+.adviseBlock .row {
+    height: 100%;
+}
+
+.adviseCol_2 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.grayLineUp {
+    width: 100%;
+    height: 130px;
+    position: absolute;
+    top: 0;
+    background: linear-gradient(0deg, #F5F5F5, #F5F5F5), #FFFFFF;
+}
+
+.grayLineDown {
+    width: 100%;
+    height: 30px;
+    background: #F5F5F5;
+    position: absolute;
+    bottom: 0;
+}
+
+.adviseBlock img {
+    width: 100%;
+    height: 680px;
+    object-fit: contain;
+    z-index: 999;
+    position: absolute;
+}
+
+.adviseBlock h1 {
+    font-family: 'GothProBla';
+    font-size: 45px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.adviseBlock h2 {
+    font-family: 'GothProLig';
+    font-size: 25px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.adviseBlock p {
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+.adviseBlock button {
+    font-family: 'GothProBla';
+    font-size: 16px;
+    line-height: 146.16%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border: none;
+}
+
+@media (min-width: 200px) and (max-width: 991px) {
+    .adviseBlock {
+        height: auto;
+    }
+
+    .adviseCol_2 {
+        padding: 84px 15px 73px 15px;
+    }
+
+    .grayLineUp {
+        position: static;
+    }
+
+    .grayLineDown {
+        position: static;
+    }
+
+    .adviseBlock img {
+        display: none;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 340px) {
+    .adviseBlock button {
+        width: 100%;
+    }
+}
+
+/*advise block styles end************************************************************************************************/
+
+.ourDoctorsBlock {
+    background: linear-gradient(0deg, #F5F5F5, #F5F5F5), #FFFFFF;
+}
+
+.ourDoctorsBlock .content_1140 {
+    padding: 150px 15px 90px 15px;
+    background: url(../img/advantageBackground.png) no-repeat;
+    background-position: 52% 70px;
+}
+
+.ourDoctorsBlock h1 {
+    font-family: 'GothProLig';
+    font-size: 45px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.ourDoctorsBlock h1 span {
+    font-family: 'GothProBla';
+    font-size: 45px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.ourDoctorsBlock .doctorsSubtext {
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 37px;
+}
+
+.doctorsCard {
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 16px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 16px -4px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 16px -4px rgba(0,0,0,0.75);
+}
+
+.doctorsCard img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.doctorsCardText {
+    padding: 0 7px;
+    min-height: 144px;
+}
+
+.doctorsCardText h2 {
+    font-family: 'GothProBla';
+    font-size: 25px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+.doctorsCardText p {
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #4F4C4D;
+    margin-bottom: 10px;
+}
+
+.doctorsCard .orangeButton {
+    width: 100%;
+    font-family: Gotham Pro;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: none;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+}
+
+.ninjaInput {
+    display: none;
+}
+
+@media (min-width: 200px) and (max-width: 1199px) {
+    .doctorsCard {
+        margin:0 auto 30px auto;
+        max-width: 264px;
+    }
+}
+
+/*ourDoctorsBlock styles end*************************************************************************************************/
+
+.ourClinics {
+    background: url(../img/advantageBackground.png) no-repeat;
+    background-position: 52% 35px;
+}
+
+.ourClinics .content_1140 {
+    padding: 102px 15px 62px 15px;
+}
+
+.ourClinics h1 {
+    font-family: 'GothProLig';
+    font-size: 45px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.ourClinics h1 span {
+    font-family: 'GothProBla';
+    font-size: 45px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.ourClinics .clinicsSubText {
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 60px;
+}
+
+.clinicsSliderWrap p {
+    font-family: 'GothProLig';
+    font-size: 15px;
+    line-height: 19px;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.clinicsSliderWrap p span {
+    font-family: 'GothProBla';
+}
+
+.clinicsSliderWrap img {
+    width: 100%;
+}
+
+.textCol {
+    display: flex;
+    align-items: flex-end;
+    height: 420px;
+}
+
+.sliderControls {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 999;
+}
+
+.sliderControls button {
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #000000;
+    border: none;
+    background: transparent;
+}
+
+.sliderControls button:hover {
+    font-family: 'GothProBla';
+}
+
+.activeButton {
+    font-family: 'GothProBla' !important;
+}
+
+.clinicsSlideHahayal {
+    transition: all 300ms ease-in-out;
+}
+
+.clinicsSlideShiba {
+    transition: all 300ms ease-in-out;
+}
+
+.clinicsSlideGercliya {
+    transition: all 300ms ease-in-out;
+}
+
+.slideAway {
+    position: absolute !important;
+    transform: translateX(100vw) translateY(-100%) !important;
+    transition: all 300ms ease-in-out !important;
+}
+
+.slideShow {
+    position: relative !important;
+    transform: translateX(0vw) translateY(0px) !important;
+    transition: all 300ms ease-in-out !important;
+}
+
+@media (min-width: 200px) and (max-width: 991px) {
+    .sliderControls {
+        position: static;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .textCol {
+        height: auto;
+        padding-top: 20px;
+    }
+}
+
+/*clinics slider styles end******************************************************************************************************************/
+
+.prices {
+    padding: 67px 0 100px 0;
+    background: url(../img/advantageBackground.png) no-repeat;
+    background-position: 52% 10px;
+}
+
+.prices h1 {
+    font-family: 'GothProBla';
+    font-size: 45px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.prices .pricesSubText {
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 60px;
+}
+
+.accordion {
+    background-color: #16579C;
+    cursor: pointer;
+    padding: 5px 20px 6px 15px;
+    width: 100%;
+    min-height: 50px;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 500ms ease-in-out;
+    align-items: center;
+    display: flex;
+    margin-bottom: 10px;
+    font-family: 'GothProLig';
+    font-size: 25px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    position: relative;
+}
+
+.active, .accordion:hover {
+    background-color: #F76B28;
+}
+
+.active {
+    margin-bottom: 0;
+}
+
+.accordion:after {
+    content: '';
+    background: url(../img/accordionArrow.png) no-repeat;
+    width: 22px;
+    height: 13px;
+    transform: rotateX(0deg);
+    transition: 500ms ease-in-out;
+    position: absolute;
+    right: 20px;
+}
+
+.active:after {
+    transform: rotateX(180deg);
+    transition: 500ms ease-in-out;
+}
+
+.panel {
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.hatRow {
+    display: flex;
+    background: #E5E5E5;
+    width: 100%;
+    min-height: 50px;
+}
+
+.hatRow p {
+    font-family: 'GothProBla' !important;
+}
+
+.baseDiagRow {
+    display: flex;
+    background: #F5F5F5;
+    width: 100%;
+    min-height: 50px;
+}
+
+.noSurgeryRow {
+    display: flex;
+    background: #E5E5E5;
+    width: 100%;
+    min-height: 50px;
+}
+
+.surgeryRow {
+    display: flex;
+    background: #F5F5F5;
+    width: 100%;
+    min-height: 50px;
+}
+
+.buttonsRow {
+    display: flex;
+    background: #E5E5E5;
+    width: 100%;
+    min-height: 50px;
+}
+
+.Col_1 {
+    width: 35%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.Col_1 p {
+    margin-bottom: 0;
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+.Col_2 {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Col_2 p {
+    margin-bottom: 0;
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+    color: #000000;
+    text-align: center;
+}
+
+
+.col_2_5 {
+    width: 5%;
+}
+
+.Col_3 {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Col_3 p {
+    margin-bottom: 0;
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+    color: #000000;
+    text-align: center;
+}
+
+.buttonsRow button {
+    height: 100%;
+    width: 100%;
+    background: #EA6428;
+
+    font-family: 'GothProBla';
+    font-size: 16px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    transition: all 300ms ease-in-out;
+    border: none;
+}
+
+.buttonsRow button:hover {
+    background: #16579C;
+    transition: all 300ms ease-in-out;
+}
+
+
+@media (min-width: 200px) and (max-width: 650px) {
+    .buttonsRow a {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 500px) {
+    .Col_1 p {
+        font-size: 10px;
+    }
+
+    .Col_2 p {
+        font-size: 10px;
+    }
+
+    .Col_3 p {
+        font-size: 10px;
+    }
+
+    .accordion:after {
+        right: 10px;
+    }
+
+    .buttonsRow a {
+        font-size: 9px;
+    }
+}
+/*prices block style end************************************************************************************************************************/
+
+.fourStepsBlock {
+    padding: 50px 0 85px 0;
+    background: url(../img/fourStepsBackground.png) no-repeat;
+    background-size: cover;
+}
+
+.fourStepsBlock h1 {
+    font-family: 'GothProBla';
+    font-size: 45px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    margin-top: 32px;
+}
+
+.fourStepsSubtext {
+    font-family: 'GothProLig';
+    font-size: 25px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    margin-bottom: 45px;
+}
+
+.stepsCard {
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.stepsCard p {
+    font-family: Gotham Pro;
+    font-size: 16px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.numberBox {
+    min-width: 150px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.numberBox p {
+    font-family: 'GothProBla';
+    font-size: 45px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #EA6428;
+    margin-bottom: 0;
+    margin-left: 20px;
+}
+
+.stepsFormCol .fourStepsSubtext {
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.stepsFormCol h2 {
+    font-family: Gotham Pro;
+    font-size: 45px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+.stepsFormCol .consultForm {
+    width: 100%;
+    padding: 10px 25px;
+    margin: 0 auto;
+}
+
+.stepsFormCol .consultForm label {
+    font-family: 'GothProLig';
+    font-size: 10px;
+    color: #EA6428;
+    transform: translateY(5px);
+    margin-left: 42px;
+    display: none;
+    position: absolute;
+}
+
+.stepsFormCol .consultForm input {
+    border: none;
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 146.16%;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.stepsFormCol .consultForm textarea {
+    border: none;
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 146.16%;
+    display: flex;
+    align-items: center;
+    color: #000000;
+}
+
+.stepsFormCol .consultForm .submit {
+    font-family: 'GothProBla';
+    font-size: 16px;
+    line-height: 146.16%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transition: all 300ms ease-in-out;
+}
+
+.stepsFormCol .consultForm .submit:hover {
+    transition: all 300ms ease-in-out;
+    background: #16579C;
+}
+
+@media (min-width: 200px) and (max-width: 500px) {
+    .fourStepsBlock h1{
+        font-size: 40px;
+    }
+    .stepsFormCol h2 {
+        font-size: 30px;
+    }
+
+    .stepsFormCol .consultForm {
+        padding: 10px 0;
+    }
+
+    .numberBox {
+        min-width: 100px;
+    }
+
+    .numberBox p {
+        font-size: 45px !important;
+    }
+
+    .stepsCard p {
+        font-size: 12px;
+    }
+}
+
+/*4 steps block styles end****************************************************************************************************************/
+
+.sixReasons {
+    padding: 133px 0 112px 0;
+    background: url(../img/advantageBackground.png) no-repeat;
+    background-position: 52% 70px;
+}
+
+.sixReasons h1 {
+    font-family: 'GothProLig';
+    font-size: 45px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.sixReasons h1 span {
+    font-family: 'GothProBla';
+}
+
+.sixReasons .sixReasonsSubText {
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.sixReasons .sixReasonsImgWrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+}
+
+.sixReasonsCard {
+    padding: 10px;
+}
+
+.sixReasonsCard h2 {
+    font-family: Gotham Pro;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.sixReasonsCard p {
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+@media (min-width: 200px) and (max-width: 575px) {
+    .sixReasonsCard {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}
+
+/*6 reasons block styles end*************************************************************************************************************/
+
+.feedBackBlock {
+    padding-bottom: 60px;
+}
+
+.feedBackBlock h1 {
+    font-family: 'GothProLig';
+    font-size: 45px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 68px;
+}
+
+.feedBackBlock h1 span {
+    font-family: 'GothProBla';
+}
+
+.slick-arrow {
+    border: none;
+    background: transparent;
+}
+
+.slick-prev {
+    position: absolute;
+    left: -52px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slick-next {
+    position: absolute;
+    right: -52px;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.sliderArrow {
+    width: 46px;
+    height: 46px;
+    border-bottom: 11px solid #C4C4C4;
+    border-right: 11px solid #C4C4C4;
+    border-radius: 5px;
+    transition: all 300ms ease-in-out;
+}
+
+.sliderArrow:hover {
+    border-bottom: 11px solid #EA6428;
+    border-right: 11px solid #EA6428;
+    transition: all 300ms ease-in-out;
+}
+
+.slick-prev .sliderArrow {
+    transform: rotate(135deg);
+}
+
+.slick-next .sliderArrow {
+    transform: rotate(-45deg);
+}
+
+.feedBackCard {
+    padding: 0 15px;
+}
+
+.feedBackCard h4 {
+    font-family: 'GothProLig';
+    font-size: 25px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+.feedBackDate {
+    font-family: 'GothProLig';
+    font-size: 12px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #000000;
+}
+
+.feedBackCard .feedBackText {
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.04em;
+    color: #000000;
+    min-height: 180px;
+    margin-bottom: 10px;
+}
+
+.feedBackCardHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.feedBackCard .slidingField {
+    max-width: 360px;
+    background: #3EC1FB;
+}
+
+.feedBackCard .slidingField .cover {
+    transform: translateX(-90%);
+    transition: all 500ms ease-in-out;
+}
+
+.feedBackCard .slidingField p {
+    margin-bottom: 0;
+    font-family: Gotham Pro;
+    font-size: 16px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #FFFFFF;
+    margin-left: 100px;
+}
+
+.feedBackCard .activePlusButton {
+    transform: translateX(500%) !important;
+    background: #16579C !important;
+    transition: all 500ms ease-in-out;
+}
+
+.feedBackCard .activePlusButton .arrowRight {
+    border-left: 15px solid #EA6428;
+}
+
+.feedBackCard .video {
+    margin: 0;
+    background: #05A1E6;
+    transition: all 500ms ease-in-out;
+}
+
+.feedBackModal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(100vw);
+    transition: all 500ms ease-in-out;
+    background: #fff;
+    z-index: 9999;
+}
+
+.feedBackModal img {
+    object-fit: contain;
+    width: 90vw;
+    height: 100vh;
+}
+
+.feedBackCard img {
+    width: 100%;
+    max-width: 400px;
+    object-fit: contain;
+}
+
+.feedBackModalActive {
+    transform: translateX(0vw);
+    transition: all 500ms ease-in-out;
+}
+
+@media (min-width: 500px) and (max-width: 1240px) {
+    .slick-prev {
+        left: 0px;
+    }
+
+    .slick-next {
+        right: 0px;
+    }
+
+    .slick-list {
+        max-width: 80%;
+        margin: 0 auto;
+    }
+
+    .feedBackCard .slidingField {
+        width: 360px;
+    }
+
+}
+
+@media (min-width: 420px) and (max-width: 499px) {
+    .feedBackCard .slidingField {
+        width: 360px;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 419px) {
+    .feedBackCard .slidingField {
+        width: 100%;
+    }
+}
+
+@media (min-width: 345px) and (max-width: 419px) {
+    .feedBackCard .activePlusButton {
+        transform: translateX(350%) !important;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 344px) {
+    .feedBackCard .activePlusButton {
+        transform: translateX(320%) !important;
+    }
+}
+
+@media (min-width: 200px) and (max-width: 499px) {
+    .slick-prev {
+        left: 0px;
+    }
+
+    .slick-next {
+        right: 0px;
+    }
+
+    .slick-list {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+}
+
+@media (min-width: 200px) and (max-width: 560px) {
+    .feedBackModal iframe {
+        width: 100vw;
+    }
+
+    .feedBackModal {
+        top: 31vh;
+        z-index: 9999;
+    }
+
+    .feedBackBlock h1 {
+        font-size: 40px;
+    }
+}
+
+/*slider block styles end*************************************************************************************************************/
+
+.contactsBlock {
+    padding: 60px 0 120px 0;
+    background: #F4F4F4;
+}
+
+.contactsBlock h1 {
+    font-family: 'GothProBla';
+    font-size: 45px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.contactsBlock p {
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 0;
+}
+
+.contactsBlock h3 {
+    font-family: 'GothProBla';
+    font-size: 25px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.contactsBlock input {
+    width: 290px;
+    height: 60px;
+    border: none;
+}
+
+.callMePhone {
+    padding-left: 40px;
+    margin-bottom: 30px;
+}
+
+.callMeForm .orangeButton {
+    font-family: Gotham pro;
+}
+
+.callMeForm label {
+    font-family: 'GothProLig';
+    font-size: 10px;
+    color: #EA6428;
+    transform: translateY(5px);
+    margin-left: 42px;
+    display: none;
+    position: absolute;
+}
+
+.map iframe {
+    border: none;
+    height: 100%;
+}
+
+@media (min-width: 200px) and (max-width: 991px) {
+
+    .map {
+        padding: 0;
+    }
+
+    .map iframe {
+        width: 100vw;
+        height: 300px;
+        margin-top: 15px;
+    }
+
+    .contactsBlock {
+        padding-bottom: 0;
+    }
+}
+
+/*contacts block styles end********************************************************************************************************************************/
+
+.ourCLiensBlock {
+    padding: 70px 0 80px 0;
+    background: #16579C;
+}
+
+.ourCLiensBlock h1 {
+    font-family: 'GothProBla';
+    font-size: 45px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 25px;
+}
+
+.ourCLiensBlock img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.lastRow {
+    background: #0F365F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60px;
+}
+
+.lastRow p {
+    font-family: 'GothProLig';
+    font-size: 16px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.11em;
+    color: #FFFFFF;
+    margin-bottom: 0;
+}
+
+@media (min-width: 200px) and (max-width: 991px) {
+    .ourCLiensBlock img {
+        max-width: 320px;
+        margin: 5px auto;
+    }
+}
+
+/*form success styles below***************************************************************************************************************************/
+
+.consultForm .formSuccess {
+    display: none;
+}
+
+.consultFormSuccess .formSuccess {
+    display: block !important;
+}
+
+.consultFormSuccess .formNormal {
+    display: none !important;
+}
+
+.consultFormAgain .formSuccess {
+    display: none;
+}
+
+.callMeForm .formSuccess {
+    display: none;
+}
+
+.consultFormAgain .successText {
+    color: #fff !important;
+}
+
+.consultForm .successText {
+    color: #fff !important;
+}
+
+.formSuccess {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+
+.grayCircle {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    margin: 0 auto 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F5F5F5;
+}
+
+.formSuccess h4 {
+    font-family: Gotham Pro;
+    font-size: 25px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 30px;
+}
+
+.formSuccess h5 {
+    font-family: Gotham Pro;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.formSuccess p {
+    font-family: Gotham Pro;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #676767;
+    margin-bottom: 0;
+}
+
+.messendgerSelect {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 2px solid #BEBEBE;
+    height: 60px;
+    padding-left: 40px;
+}
+
+.formSuccess .orangeButton {
+    margin-top: 15px;
+    z-index: 998;
+    width: 100%;
+}
+
+.formSuccess a {
+    z-index: 999;
+}
